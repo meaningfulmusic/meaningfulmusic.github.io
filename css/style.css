@@ -7,6 +7,28 @@
    margin-right: -8pt;
 }
 
+pre {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=text], input[type=email] {
+    background-color: transparent;
+    width: 170pt;
+    border-style: none;
+    border-bottom: ridge 3px;
+}
+
+textarea {
+    background-color: transparent;
+}
+
+input[type=submit], input[type=reset] {
+    text-align: center;
+    border: 1pt solid #026a5f;
+    border-radius: 1000pt;
+    padding: 6pt;
+}
+
 #homeBar {
     text-align: center;
     margin: 0px;
@@ -20,14 +42,38 @@
     box-shadow: -3px 8px 8px  0px grey;
 }
 
+#contact-form {
+    /* margin-left: 40pt; */
+    padding: 20pt 10vw;
+    display: block;
+    /* background-color: #ffe5b4; */
+}
+
+.article {
+    width: 75%;
+    text-align: left;
+    max-width: 750pt;
+    display: block;
+    margin: 40pt auto;
+}
+
 .purpose {
     width: 75%;
     text-align: center;
     max-width: 750px;
     display: block;
-    margin-top: 25pt;
+    margin-top: 4vw;
  	margin-left: auto;
  	margin-right: auto;
+}
+
+p a {
+    color: #076f64;
+    padding: 6pt;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    transition: all .1s ease-in;
 }
 
 .logo {
@@ -55,6 +101,12 @@
  	margin-left: auto;
  	margin-right: auto;
 	outline: 7pt solid #1f1f1f;
+}
+
+.banner {
+    width: 100%;
+    /* max-height: 80vh; */
+    margin-top: min(0pt, -40vw + 150pt);
 }
 
 .container {
@@ -98,6 +150,22 @@ h1 {
     border-bottom-style: solid;
 }
 
+h2 {
+    position: absolute;
+    text-align: center;
+    min-width: fit-content;
+    /* top: 20vw; */
+    left: 50%;
+    transform: translate(-50%, -80pt);
+    /* transform: translate(-50%, -21.5vw); */
+    font-size: 30pt;
+    color: red;
+    background-color: whitesmoke;
+    border: 1.7px solid black;
+    box-shadow: .7vw .6vw; /* linear-gradient(to right,#026a5f, #2d2d87);*/
+    padding: max(2vw, 14pt);
+}
+
 small {
     font-size: 3vh;
     color: #af6f3b;
@@ -108,21 +176,20 @@ small {
     margin-right: 5vw;
     display: block;
     float: right;
-    transform: translatey(8vh);
+    transform: translatey(45pt);
 }
 
 a {
     font-size: 15pt;
     color: #076f64;
-    padding: 1.2vh;
+    padding: 6pt;
     font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
     width: 7vw;
-    min-width: 45pt;
+    min-width: fit-content;
     text-decoration: none;
     transition: all .1s ease-in;
 }
-
 
 a:hover {
     background-image: none;
